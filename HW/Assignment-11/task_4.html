@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Country and State Selection</title>
+    </head>
+    <body>
+        <h2>Select Country and State</h2>
+        <form id="locationForm">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">--Select Country--</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">UK</option>
+            </select>
+            <br><br>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="">--Select State--</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Karnataka">Karnataka</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+             document.getElementById("locationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const country = document.getElementById("country").value;
+      const state = document.getElementById("state").value;
+
+      if (country === "" || state === "") {
+        alert("Please select both country and state!");
+      } else {
+        alert("You selected " + state + ", " + country);
+      }
+    });
+        </script>
+    </body>
+</html>

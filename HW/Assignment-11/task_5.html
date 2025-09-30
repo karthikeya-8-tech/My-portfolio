@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order</title>
+</head>
+<body>
+  <h2>Select Your Food</h2>
+
+  <form id="foodForm">
+    <input type="checkbox" id="pizza" name="food" value="Pizza">
+    <label for="pizza">Pizza</label><br>
+
+    <input type="checkbox" id="burger" name="food" value="Burger">
+    <label for="burger">Burger</label><br>
+
+    <input type="checkbox" id="sandwich" name="food" value="Sandwich">
+    <label for="sandwich">Sandwich</label><br>
+
+    <input type="checkbox" id="pasta" name="food" value="Pasta">
+    <label for="pasta">Pasta</label><br><br>
+
+    <button type="submit">Order Now</button>
+  </form>
+
+  <script>
+    document.getElementById("foodForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      
+      const foodItems = document.getElementsByName("food");
+      let selectedItems = [];
+
+      for (let item of foodItems) {
+        if (item.checked) {
+          selectedItems.push(item.value);
+        }
+      }
+
+      if (selectedItems.length === 0) {
+        alert("Please select at least one food item!");
+      } else {
+        alert("You ordered: " + selectedItems.join(", "));
+      }
+    });
+  </script>
+</body>
+</html>

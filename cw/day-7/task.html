@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple FAQ Boxes</title>
+  <style>
+    .box {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<h2>FAQ</h2>
+
+<div class="box">
+  <p><b>How do I submit my solution?</b></p>
+  <p id="ans1" style="display:none;">
+    We'd recommend reading our complete guide to submitting solutions.  
+    If you get stuck and need help, please ask questions in our Discord server,  
+    and we’ll help you submit your project.
+  </p>
+  <button onclick="toggle('ans1')">+/-</button>
+</div>
+
+<div class="box">
+  <p><b>Is there an official solution I can take a look at?</b></p>
+  <p id="ans2" style="display:none;">
+    Yes, once the challenge is over, we’ll share the official solution  
+    so you can compare with your approach.
+  </p>
+  <button onclick="toggle('ans2')">+/-</button>
+</div>
+
+<script>
+  function toggle(id) {
+    let x = document.getElementById(id);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>

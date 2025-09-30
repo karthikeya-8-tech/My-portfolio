@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Form</title> 
+    <form action="post">
+        <fieldset>
+            <legend>JOB</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" size="30" required><br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" minlength="18" maxlength="60"  placeholder="Enter your age"  required><br><br>
+            <label for="port">Portfolio:</label>
+            <input type="url" name="port" id="port" placeholder = "Paste url" size="27" required><br><br>
+            <label for="resume">Upload Resume</label>
+            <input type="file" name="resume" id="resume" accept=".doc .pdf .docx" required><br><br>
+            <label for="birth">Date Of Birth:</label>
+            <input type="date" name="birth" id="birth" required><br><br>
+            <label for="inter">Prefered Interview Time:</label>
+            <input type="time" name="inter" id="inter" required><br><br>
+            <label for="color">Favorite Color:</label>
+            <input type="color" name="color" id="color" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Enter 10-Digit Number" required><br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            
+        </fieldset>
+    </form>
+</head>

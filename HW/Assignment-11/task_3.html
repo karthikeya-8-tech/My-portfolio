@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Method Selection</title>
+</head>
+<body>
+  <h2>Select Payment Method</h2>
+  
+  <form id="paymentForm">
+    <input type="radio" id="credit" name="payment" value="Credit Card">
+    <label for="credit">Credit Card</label><br>
+
+    <input type="radio" id="debit" name="payment" value="Debit Card">
+    <label for="debit">Debit Card</label><br>
+
+    <input type="radio" id="upi" name="payment" value="UPI">
+    <label for="upi">UPI</label><br>
+
+    <input type="radio" id="netbanking" name="payment" value="Net Banking">
+    <label for="netbanking">Net Banking</label><br><br>
+
+    <button type="submit">Pay Now</button>
+  </form>
+
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      
+      const paymentOptions = document.getElementsByName("payment");
+      let selectedMethod = "";
+      
+      for (let option of paymentOptions) {
+        if (option.checked) {
+          selectedMethod = option.value;
+          break;
+        }
+      }
+      
+      if (selectedMethod === "") {
+        alert("Please select a payment method!");
+      } else {
+        alert("You selected payment method: " + selectedMethod);
+      }
+    });
+  </script>
+</body>
+</html>

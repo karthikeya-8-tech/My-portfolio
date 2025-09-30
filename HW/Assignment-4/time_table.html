@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weekly College Timetable</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            th {
+                background-color: black;
+                color: white;
+            }
+            .math {
+                background-color: lightblue;
+            }
+            .cse {
+                background-color: lightgreen;
+            }
+            .english {
+                background-color: lightcoral;
+            }
+            .physics {
+                background-color: lightgoldenrodyellow;
+            }
+            .library, .lab, .project, .sports, .seminar {
+                background-color: lightgray;
+                color: whitesmoke;
+            }
+            .lunch {
+                background-color: lightpink;
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Weekly College Timetable</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th>12:00 - 1:00</th>
+                <th>1:00 - 2:00</th>
+                <th>2:00 - 3:00</th>
+                <th>3:00 - 4:00</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td class="math">Mathematics</td>
+                <td class="cse">CSE</td>
+                <td class="english">English</td>
+                <td class="lunch" rowspan="5">LUNCH BREAK</td>
+                <td class="physics">Physics</td>
+                <td class="library">Library</td>
+                <td class="cse">CSE</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td class="cse">CSE</td>
+                <td class="math">Mathematics</td>
+                <td class="physics">Physics</td>
+                <td class="english">English</td>
+                <td class="lab">Lab Session</td>
+                <td class="lab">Lab Session</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td class="english">English</td>
+                <td class="cse">CSE</td>
+                <td class="math">Mathematics</td>
+                 <td class="physics">Physics</td>
+                <td class="cse">CSE</td>
+                <td class="seminar">Seminar</td>
+                </tr>
+            <tr>
+                <td>Thursday</td>
+                <td class="project">Project Work</td>
+                <td class="project">Project Work</td>
+                <td class="english">English</td>
+                <td class="math">Mathematics</td>
+                <td class="physics">Physics</td>
+                <td class="cse">CSE</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td class="physics">Physics</td>
+                <td class="cse">CSE</td>
+                <td class="math">Mathematics</td>
+                <td class="sports" colspan="3">Sports & Activities</td>
+            </tr>
+        </table>
+    </body>
+</html>

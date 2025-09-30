@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORAGE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: #1270cd;
+            color: rgb(1, 0, 0);
+            padding: 15px;
+            font-style: bold;
+            font-size: large;
+            text-align: auto;
+            justify-content: space-around;
+        }   
+        .navbar {
+            background: #1270cd;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #212020;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('bg_3.jpg');
+        }
+        .hero h1 {
+            margin-bottom: 15px;
+            color: #454548;
+        }
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-bottom: 5px;
+        }
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+        .box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+        }
+        footer {
+            background: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        form input, form textarea {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            padding: 8px;
+        }
+       form button {
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+       }
+    </style>
+</head>
+<body>
+    <header >HORAGE
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        </nav>  
+    </header>
+    <div class="hero">
+      <h1>Unlock Your Potential with Our Innovative Solutions</h1>  
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+    <section>
+        <h2>Our Services</h2>
+        <div class="box">
+            <h3>Secure Storage</h3>
+            <p>Safe place for your files.</p>
+        </div>
+        <div class="box">
+            <h3>Collaboration</h3>
+            <p>Work together in real-time.</p>
+        </div>
+        <div class="box">
+            <h3>Cloud Scale</h3>
+            <p>Grow your business easily.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Recent Projects</h2>
+        <img src="Resource/serviceNow.jpeg" alt="project" width="225px">
+        <img src="Resource/wt.png" alt="project" width="250px">
+    </section>
+    <section>
+        <h2>About Us</h2>
+        <p>We create simple and secure solutions for business and teams.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">submit</button>
+        </form>
+        <footer>
+            <p> © 2025 HORAGE - ALL RIGHTS RESEVERVED</p>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: #f8f8f8;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        nav a.active {
+            border-bottom: 2px solid black;
+        }
+        .signup-btn {
+            background: rgb(90, 89, 89);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .hero {
+            background: url("mount.jpg") no-repeat center/cover;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .hero .btn {
+            padding: 10px 20px;
+            border: 2px solid rgb(16, 118, 213);
+            border-radius: 20px;
+            color:  rgb(8, 142, 209);
+            transition: color 0.3s;
+            background-color: rgb(12, 160, 240);
+            text-decoration: none;
+        }
+        .hero .btn:hover {
+            color: #070707;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background: #f4f4f4;
+        }
+        .feature-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .feature-box img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #fff;
+            font-size: 14px;
+        }
+        .socials a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .socials a:hover {
+            color: #0077b5;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="logo">HORAGE</div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Features</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#" class="signup-btn">Sign Up</a>
+     </header>
+     <section class="hero">
+        <h2>Unlock Your Potential</h2>
+        <a href="#" class="btn">Get Started</a>
+     </section>
+     <section class="features">
+        <div class="feature-box">
+            <img src="setting.png"/>
+            <h3>Customizable Tools</h3>
+        </div>
+        <div class="feature-box">
+            <img src="bulb.png"/>
+            <h3>Innovative Solutions</h3>
+        </div>
+        <div class="feature-box">
+            <img src="secure.jpg"/>
+            <h3>Secure Platform</h3>
+        </div>
+        <div class="feature-box">
+            <img src="support.jpg"/>
+            <h3>24*7 support</h3>
+        </div>
+     </section>
+     <footer>
+        <p><b>About Us</b><br>
+            At HORAGE, we turn ideas into impact. Our platform is designed to help you grow with customizable tools, innovative solutions, and a secure environment you can trust. We’re more than just technology—we’re your partner in progress, with 24/7 support to guide you every step of the way.
+Together, let’s unlock your potential and create lasting success.
+        </p>
+       <div class="socials">
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+     </footer>
+</body>
+</html>

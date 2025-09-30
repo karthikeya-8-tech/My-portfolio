@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Pattern</title>
+</head>
+<body>
+    <script>
+       let A = 1;
+       const B = 50;
+       for (let row = 1; row <= B; row++) {
+        let line = '  ' + ' ';
+        for (let count = 1; count <= row; count++) {
+            line += A + '  ' + ' ';
+            A++;
+        }
+        document.write(line.trim() + '<br>');
+       }
+    </script>
+</body>
+</html>

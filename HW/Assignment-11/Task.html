@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Validation</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 50px;
+                background-color: #f4f4f4;
+            }
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                max-width: auto;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+            button {
+                padding: 10px 15px;
+                border: none;
+                background-color: #007bff;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="registerForm">
+            <h2>Register</h2>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <input type="password" id="confirmPassword" placeholder="ConfirmPassword" required>
+            <button type="submit">Register</button>
+        </form>
+        <script>
+            document.getElementById('registerForm').addEventListener('submit', function(event){
+                event.preventDefault();
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                if (!password || !confirmPassword) {
+                    alert("Please fill both fields!");
+                    return;
+                }
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match!");
+                } else {
+                    alert("Password confirmed successfully!");
+                }
+            });
+        </script>
+    </body>
+</html>

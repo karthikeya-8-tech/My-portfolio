@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            padding-left: 200px;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        ul li{
+            list-style-type: none;
+            float: left;
+            width:200px;
+            height: 40px;
+            border: 1px solid blue;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 40px;
+            
+
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            font-size: 22px;
+        }
+        ul li a:hover{
+            color: black;
+            background-color: brown;
+        }
+        ul li ul{
+            display: none;
+        }
+        ul li:hover ul{
+            display: block;
+        }
+       
+    </style>
+</head>
+<body>
+    <ul >
+        <li><a href="">Home</a></li>
+        <li><a href="">Facality</a></li>
+        <li><a href="">Department</a>
+            <ul>
+                <li><a href="">CSE</a></li>
+                <li><a href="">ECE</a></li>
+                <li><a href="">CAD</a></li>
+                <li><a href="">AIML</a></li>
+                <li><a href="">EEE</a></li>
+            </ul>
+       </li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Awards</a></li>
+    </ul>
+</body>
+</html>
